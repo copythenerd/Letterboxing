@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "letterboxing",
+	"version": "${version}",
+	"name": "Letterboxing",
+	"description": "A mod that adds customizable letter- and pillarboxing for more immersive gameplay.",
+	"authors": [
+		"CopyTheNerd"
+	],
+	"contact": {
+		"homepage": "https://github.com/copythenerd",
+        "sources": "https://github.com/copythenerd/Letterboxing",
+        "issues": "https://github.com/copythenerd/Letterboxing/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/letterboxing/icon.png",
+	"builtinResourcePacks": [
+		"pumpkinblur_overwrite"
+	],
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.copythenerd.letterboxing.Letterboxing"
+		],
+		"fabric-datagen": [
+			"com.copythenerd.letterboxing.LetterboxingDataGenerator"
+		],
+		"client": [
+			"com.copythenerd.letterboxing.LetterboxingClient"
+		],
+		"modmenu": [
+			"com.copythenerd.letterboxing.config.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"letterboxing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
