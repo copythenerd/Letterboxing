@@ -1,0 +1,25 @@
+{
+	"required": true,
+	"package": "com.copythenerd.letterboxing.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [],
+	"client": [
+		"BossbarHudMixin",
+		"InGameHudMixin",
+		"SubtitlesHudMixin",
+		"ToastManagerMixin",
+		"AdvancementToastMixin",
+		"RecipeToastMixin",
+		"SpectatorHudMixin",
+		"DebugHudMixin",
+		"ChatHudMixin",
+		"TutorialToastMixin",
+		"ChatScreenMixin",
+		"SleepingChatScreenMixin",
+		"ChatInputSuggestorMixin"
+	],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
